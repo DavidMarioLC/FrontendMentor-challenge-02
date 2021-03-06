@@ -15,6 +15,7 @@
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution {
+      margin: 4rem;
       font-size: 11px;
       text-align: center;
     }
@@ -34,49 +35,51 @@
     <div class="wrapper">
       <div class="hero__content">
 
-        <h1 class="hero__title">10,000+ of our users love our products.</h1>
-        <p class="hero__info">We only provide great products combined with excellent customer service.
-          See what our satisfied customers are saying about our services.</p>
+        <div class="hero__cta">
+          <h1 class="hero__title">10,000+ of our users love our products.</h1>
+          <p class="hero__info">We only provide great products combined with excellent customer service.
+            See what our satisfied customers are saying about our services.</p>
+        </div>
+        <section class="rankings">
+          <div class="ranking__content">
+            <div class="ranking-card">
+              <p class="ranking-stars">
+                <ion-icon class="stars" name="star"></ion-icon>
+                <ion-icon class="stars" name="star"></ion-icon>
+                <ion-icon class="stars" name="star"></ion-icon>
+                <ion-icon class="stars" name="star"></ion-icon>
+                <ion-icon class="stars" name="star"></ion-icon>
+              </p>
+              <p class="ranking-card__text">Rated 5 Stars in Reviews</p>
+            </div>
+            <div class="ranking-card">
+              <p class="ranking-stars">
+                <ion-icon class="stars" name="star"></ion-icon>
+                <ion-icon class="stars" name="star"></ion-icon>
+                <ion-icon class="stars" name="star"></ion-icon>
+                <ion-icon class="stars" name="star"></ion-icon>
+                <ion-icon class="stars" name="star"></ion-icon>
+              </p>
+              <p class="ranking-card__text">Rated 5 Stars in Report Guru</p>
+            </div>
+            <div class="ranking-card">
+              <p class="ranking-stars">
+                <ion-icon class="stars" name="star"></ion-icon>
+                <ion-icon class="stars" name="star"></ion-icon>
+                <ion-icon class="stars" name="star"></ion-icon>
+                <ion-icon class="stars" name="star"></ion-icon>
+                <ion-icon class="stars" name="star"></ion-icon>
+              </p>
+              <p class="ranking-card__text">Rated 5 Stars in BestTech</p>
+            </div>
+          </div>
+
+        </section>
       </div>
     </div>
   </div>
 
-  <section class="rankings">
-    <div class="wrapper">
-      <div class="ranking__content">
-        <div class="ranking-card">
-          <p class="ranking-stars">
-            <ion-icon class="stars" name="star"></ion-icon>
-            <ion-icon class="stars" name="star"></ion-icon>
-            <ion-icon class="stars" name="star"></ion-icon>
-            <ion-icon class="stars" name="star"></ion-icon>
-            <ion-icon class="stars" name="star"></ion-icon>
-          </p>
-          <p class="ranking-card__text">Rated 5 Stars in Reviews</p>
-        </div>
-        <div class="ranking-card">
-          <p class="ranking-stars">
-            <ion-icon class="stars" name="star"></ion-icon>
-            <ion-icon class="stars" name="star"></ion-icon>
-            <ion-icon class="stars" name="star"></ion-icon>
-            <ion-icon class="stars" name="star"></ion-icon>
-            <ion-icon class="stars" name="star"></ion-icon>
-          </p>
-          <p class="ranking-card__text">Rated 5 Stars in Report Guru</p>
-        </div>
-        <div class="ranking-card">
-          <p class="ranking-stars">
-            <ion-icon class="stars" name="star"></ion-icon>
-            <ion-icon class="stars" name="star"></ion-icon>
-            <ion-icon class="stars" name="star"></ion-icon>
-            <ion-icon class="stars" name="star"></ion-icon>
-            <ion-icon class="stars" name="star"></ion-icon>
-          </p>
-          <p class="ranking-card__text">Rated 5 Stars in BestTech</p>
-        </div>
-      </div>
-    </div>
-  </section>
+
 
   <section class="clients">
     <div class="wrapper">
@@ -123,9 +126,13 @@
 
   <div class="attribution">
     Challenge by
-    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your
-      Name Here</a>.
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a
+      href="#">David Mario Licla Carpio</a>.
   </div>
+  <picture class="hero__image__botom">
+    <source media="(min-width:900px)" srcset="./images/bg-pattern-bottom-desktop.svg">
+    <img src="./images/bg-pattern-bottom-desktop.svg" alt="esta es una imagen grande">
+  </picture>
 </body>
 
 </html>

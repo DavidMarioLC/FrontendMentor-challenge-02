@@ -13,19 +13,17 @@ body{
 }
 
 .wrapper{
-    max-width: 1440px;
+    max-width: 1100px;
     margin: auto;
     padding: 0 2.4rem;
 
 }
 
-.hero{
-  
+.hero__content{
+    margin-top: 4.8rem;
+}
 
-}
-.hero__image{
-   
-}
+
 .hero__image img{
     position: absolute;
     top: 0;
@@ -38,10 +36,7 @@ body{
     font-size: 2.0rem;
     font-weight: 700;
     text-align: center;
-    letter-spacing: -1px;
-    margin-top: 4.8rem;
-
-    
+    letter-spacing: -1px; 
 }
 
 .hero__info{
@@ -52,9 +47,7 @@ body{
     line-height: 24px;
 }
 
-.rankings{
 
-}
 
 .ranking__content{
     margin: 2.4rem 0;
@@ -123,4 +116,90 @@ body{
 .client-card__message{
     color: var(--White);
     font-size: .8rem;
+}
+
+.hero__image__botom img{
+  display: none;
+    
+}
+@media screen and (min-width:700px){
+
+    
+    .hero__content{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .hero__cta{
+        flex-basis: 400px;
+       
+        
+    }
+
+    .hero__title{
+        line-height: 40px;
+        text-align: left;
+    }
+    .hero__info{
+        text-align: left;
+    }
+
+
+    .ranking__content{
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+    }
+
+    .ranking-card{
+        width:350px ;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .ranking-card:nth-child(1){
+        margin-top: 0;
+        align-self: flex-start;
+    }
+    .ranking-card:nth-child(2){
+        align-self: center;
+      
+    }
+    .ranking-card:nth-child(3){
+        align-self: flex-end;
+    }
+
+    .stars{
+        vertical-align: middle;
+    }
+    .clients__content{
+        display: flex;
+        justify-content: space-between;
+        height:250px;
+    }
+
+    .client-card{
+        margin-top: 0;
+    }
+    .client-card:nth-child(1){
+        align-self: flex-start;
+        margin-right: 1.6rem;
+    }
+    .client-card:nth-child(2){
+        align-self: center;
+        margin-right: 1.6rem;
+        
+    }
+    .client-card:nth-child(3){
+        align-self: flex-end;
+        margin-right: 0;
+    }   
+    .hero__image__botom img{
+        display: block;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        
+    }
 }
